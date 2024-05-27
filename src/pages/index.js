@@ -1,16 +1,15 @@
+import Footer from "@/components/Footer";
 import HeroBanner from "@/components/HeroBanner";
 import Navigation from "@/components/Navigation";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
     <main>
-      {/* Nav */}
       <Navigation />
-      {/* hero banner */}
       <HeroBanner />
-      {/* projects */}
-      {/* about */}
-      {/* footer */}
+      <Projects />
+      <Footer />
     </main>
   );
 }

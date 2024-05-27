@@ -20,6 +20,11 @@
   font-family: Source Code Pro;
 }
 
+body,
+html {
+  scroll-behavior: smooth;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -108,4 +113,95 @@ a {
 
 .skill-style {
   color: #cb7901;
+}
+
+.projects__container {
+  /* background: red; */
+}
+
+.projects__title {
+  background: #fc8f00;
+  padding: 1em 5em;
+  height: 300px;
+  display: flex;
+  align-items: center;
+
+  /* adding parallax effect */
+  background-size: 380px !important;
+  background-image: url("/images/project-banner-2.png");
+  background-attachment: fixed;
+  background-position: right -20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects__title h2 {
+  color: #fff;
+  width: 100%;
+  font-size: 2em;
+  padding-bottom: 0.5em;
+  position: relative;
+}
+
+.projects__title h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.67px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.projects__list {
+  padding: 1em 5em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.projects__card {
+  width: 320px;
+  border-radius: 15px;
+  overflow: hidden;
+  @apply shadow-xl;
+  cursor: pointer;
+}
+.projects__image {
+  height: 250px;
+}
+
+.projects__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 500ms ease;
+  transform-origin: top;
+}
+
+.projects__card:first-child .projects__image img {
+  object-fit: fill;
+}
+
+.projects__description {
+  min-height: 180px;
+  padding: 8px 12px;
+  background-color: #fff;
+}
+
+.projects__card:hover {
+  overflow: visible;
+}
+
+.projects__card:hover .projects__image img {
+  scale: 1.2 1.1;
+  object-fit: auto;
+}
+
+.footer-link {
+  font-family: Typeka !important;
+  font-size: 1.2em;
+  color: #f1f0f0;
 }

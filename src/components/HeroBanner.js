@@ -1,6 +1,6 @@
 export default function HeroBanner() {
   return (
-    <div className="hero-banner">
+    <section className="hero-banner">
       <div className="social-links">
         <ul>
           <li>
@@ -39,6 +39,6 @@ export default function HeroBanner() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

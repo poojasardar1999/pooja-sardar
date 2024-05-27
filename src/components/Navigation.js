@@ -11,9 +11,9 @@ export default function Navigation() {
         <li>
           <a href="/#projects">Projects</a>
         </li>
-        <li>
+        {/* <li>
           <a href="/#about">About</a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
